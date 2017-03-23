@@ -1,0 +1,10 @@
+/*优惠爆料开始*/
+.container .header .return-c {
+    width: calc(100% - 6.4rem);
+}
+.container .header a:last-child span {
+    background: url(../images/iconfont-shaixuan.png) no-repeat center center;
+    background-size: contain;
+    width: 100%;
+}
+/*优惠爆料结束*/

@@ -1,0 +1,27 @@
+/*站内消息开始*/
+.container .header .return-c {
+    width: calc(100% - 6.4rem);
+}
+.container .header a:last-child span {
+    background: url(../images/iconfont-shouye.png) no-repeat center center;
+    background-size: contain;
+    width: 100%;
+}
+/*站内消息结束*/
+/*订单确认开始*/
+.container .main .indent li {
+    border-bottom: .3rem solid #E4E4E4;
+}
+.container .main .indent li div {
+    border-bottom: .1rem solid #F9F9F9;
+}
+.container .main .indent li div span:first-child {
+    padding: 1.2rem 0 1.2rem .8rem;
+}
+.container .main .indent li div span:last-child {
+    padding: 1.4rem 1rem 1.4rem 0;
+}
+.container .main .indent li p {
+    padding: 1.4rem 1rem 1.4rem .8rem;
+}
+/*订单确认结束*/

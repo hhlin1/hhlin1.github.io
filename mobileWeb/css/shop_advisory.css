@@ -1,0 +1,45 @@
+/*头部开始*/
+.container .header .return-c {
+    width: calc(100% - 8.8rem);
+}
+/*头部结束*/
+/*主体新闻开始*/
+.container .main .issue>li {
+    padding: 1.5rem 1rem;
+    border-bottom: .1rem dashed #CCCCCC;
+}
+.container .main .issue li ul li:nth-child(1) {
+    width: 6.5rem;
+}
+.container .main .issue li ul li:nth-child(1) a {
+    width: 100%;
+}
+.container .main .issue li ul li:nth-child(1) a img {
+    width: 100%;
+}
+.container .main .issue li ul li:nth-child(2) {
+    width: 54%;
+    padding-left: 1rem;
+}
+.container .main .issue li ul li:nth-child(2) p:first-child {
+    dispaly: inline-block;
+    color: #00A5E0;
+    font-size: 1.5rem;
+    padding: 1.4rem 0 .6rem;
+}
+.container .main .issue li ul {
+    position: relative;
+}
+.container .main .issue li ul li:nth-child(3) {
+    /*width: 10%;*/
+    position: absolute;
+    right: 0rem;
+    top: 2.2rem;
+}
+.container .main .issue li ul li:nth-child(3) span {
+    background: #F74C31;
+    padding: .2rem .4rem;
+    color: #fff;
+}
+
+/*主体新闻结束*/
