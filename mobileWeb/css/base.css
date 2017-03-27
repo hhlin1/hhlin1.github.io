@@ -1,0 +1,362 @@
+/*reset css*/
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    /*需要针对移动设备做设置*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
+}
+html {
+    font-size: 62.5%;/*10/16=62.5%*/
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+body{
+    font-size: 1.2rem;
+    font-family: "microsoft YaHei","sans-serif";/*使用移动端默认的字体*/
+    color: #666;
+    background-color: #F5F5F5;
+}
+a{
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover{
+    color: #333;
+}
+ol,ul,li{
+    list-style: none;
+}
+span {
+    display: inline-block;
+}
+input,textarea{
+    border: none;
+    outline: none;
+    resize: none;
+    /*但是在移动设备当中 有一些浏览器是会有自己的默认样式*/
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/*媒体查询*//*
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media screen and (min-width: 346px) {
+    html {
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 352px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 480px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 560px) {
+    html {
+        font-size: 21px;
+    }
+}
+@media screen and (min-width: 640px) {
+    html {
+        font-size: 24px;
+    }
+}*/
+
+@media only screen and (min-width:481px){
+    html{
+        font-size:94%!important;/*15.04/16=94%*/
+    }
+}
+@media only screen and (min-width:561px){
+    html{
+        font-size:109%!important;/*17.44/16=109%*/
+    }
+}
+@media only screen and (min-width:641px){
+    html{
+        font-size:125%!important;/*20/16=125%*/
+    }
+}
+
+/*common css ----------------------------------------------------*/
+/*头部公用*/
+.container .header {
+    width: 100%;
+    height: 4.4rem;
+    background: #FF8200;
+    padding: 0.7rem 1.5rem;
+}
+.container .header span {
+    display: inline-block;
+    height: 3rem;
+}
+/*返回开始*/
+.container .header a:first-child {
+    width: 3.2rem;
+}
+.container .header a:last-child {
+    /*width: 3.2rem;*/
+}
+.container .header a:first-child span {
+    background: url(../images/iconfont-fanhui.png) no-repeat center center;
+    background-size: contain;
+    width: 100%;
+}
+.container .header .return-c {
+    text-align: center;
+    font: lighter 2.0rem/3rem "microsoft yahei";
+}
+.container .header .return-r {
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+/*返回结束*/
+/*主体公用开始*/
+.container .main {
+    padding: 0.4rem 0.6rem 0;
+    width: 100%;
+}
+/*搜索开始*/
+.container .main .search {
+    height: 3.8rem;
+    position: relative;
+}
+.container .main .search span {
+    background: url(../images/iconfont-sousuo.png) no-repeat;
+    background-size: contain;
+    width: 2.4rem;
+    height: 2.4rem;
+    position: absolute;
+    top: .8rem;
+    left: .5rem;
+}
+.container .main .search input:first-child {
+    width: calc(100% - 8.2rem);
+    height: 3.8rem;
+    padding-left: 3.2rem;
+}
+.container .main .search input:last-child {
+    width: 8.2rem;
+    height: 3.8rem;
+    background: #009999;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+/*搜索结束*/
+/*热门商城开始*/
+.container .main .hot .shop li {
+    padding: 2rem .3rem 0;
+    float: left;
+}
+.container .main .hot .shop li a {
+    padding: 1.8rem;
+    text-align: center;
+    display: block;
+}
+.container .hot .shop li .jd {
+    background: url(../images/%7Fjd.png) no-repeat center 0;
+    background-size: contain;
+}
+.container .hot .shop li .suning {
+    background: url(../images/hotMall01.png) no-repeat center 0;
+    background-size: contain;
+}
+.container .hot .shop li .amazon {
+    background: url(../images/hotMall02.png) no-repeat center 0;
+    background-size: contain;
+}
+.container .hot .shop li .gome {
+    background: url(../images/hotMall03.png) no-repeat center 0;
+    background-size: contain;
+}
+.container .hot .shop li p {
+    padding-bottom: .8rem;
+    text-align: center;
+}
+.container .hot .shop li p span {
+    color: #FF3300;
+}
+/*热门商城结束*/
+/*最新爆料开始*/
+.container .product {
+    width: 100%;
+}
+.container .product .newest a {
+    display: block;
+    width: 3.2rem;
+    height: 100%;
+    background: url(../images/iconfont-shuaxin.png) no-repeat;
+    background-position: center center;
+}
+.container .product .intro li .kettle {
+    width: 6.7rem;
+    padding: 2rem 0 2rem .7rem;
+}
+.container .product .intro li .kettle img {
+    width: 6rem;
+}
+.container .product .intro .details {
+    width: calc(100% - 6.7rem);
+    padding: 1.6rem .4rem 0 .6rem;
+}
+.container .product .intro .details p:nth-child(2) {
+    padding: 1rem 0;
+}
+.container .product .intro .details .price {
+    position: relative;
+}
+.container .product .intro .details .price div span:nth-child(2){
+    padding-left: .4rem;
+    text-decoration: line-through;
+}
+/*最新爆料开始*/
+/*主体公用结束*/
+/*底部开始*/
+.container .footer {
+    padding: 0 0.6rem;
+}
+.container .enter li {
+    width: 33.33333%;
+}
+.container .model-number {
+    height: 8rem;
+}
+.container .model-number li {
+    width: 33.33333%;
+    padding-top: 1.4rem;
+    float: left
+}
+.container .model-number a {
+    display: block;
+    padding: 2rem;
+    text-align: center;
+}
+.container .model-number .app a {
+    background: url(../images/icon-app.png) no-repeat center 0;
+    background-size: 3.2rem 3.2rem;
+}
+.container .model-number .phone a {
+    background: url(../images/icon-phone.png) no-repeat center 0;
+    background-size: 3.2rem 3.2rem;
+}
+.container .model-number .pc a {
+    background: url(../images/icon-pc.png) no-repeat center 0;
+    background-size: 3.2rem 3.2rem;
+}
+.container .model-number p {
+    display: inline-block;
+    text-align: center;
+}
+.container .copyright {
+    margin: 1.6rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+/*底部结束*/
+.f_right{
+    float: right;
+}
+.f_left{
+    float: left;
+}
+.clearfix::before,
+.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.bg-color {
+    background-color: #fff;
+}
+.container .main .banner .play ul:last-child .current {
+    background: #7FC242;
+}
+.pop {
+    font-size: 1.5rem;
+    color: #2FCEDC;
+}
+.pop a {
+    color: #2FCEDC;
+}
+.hot-t {
+    width: 100%;
+    height: 3.9rem;
+    line-height: 3.9rem;
+    padding: 0 1em;
+}
+.border-b {
+    border-bottom: .1rem solid #F9F9F9;
+}
+.f-color {
+    color: #FF3300;
+}
+.line-hi {
+    width: 100%;
+    height: 2.8rem;
+    padding: .8rem 0;
+    text-align: center;
+    cursor: pointer;
+}
+.app-color {
+    color: #00BB9C;
+}
+.phone-color {
+    color: #EC543E;
+}
+.font-gray {
+    color: #999;
+}
+.font-333 {
+    color: #333;
+}
+.font-white {
+    color: #fff;
+}
+.font-16 {
+    font-size: 1.6rem;
+}
+.hover-col {
+    color: #00BB9C;
+    border-bottom: .1rem solid #00BB9C;
+}
+.color-blue {
+    color: #4EABE8;
+}
+.back-color {
+    background-color: #4EABE8;
+}
+.pl-4 {
+    padding-left: .4rem;
+}
+.pr-10 {
+    padding-right: 1rem;
+}
+.mg-b8 {
+    margin-bottom: .8rem;
+}
+.mg-b15 {
+    margin-bottom: 1.5rem;
+}

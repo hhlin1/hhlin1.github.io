@@ -1,0 +1,75 @@
+/*头部开始*/
+.container .header span:first-child {
+    background: url(../images/head-logo.png) no-repeat left center;
+    background-size: contain;
+    width: 70%;
+}
+.container .header span:last-child {
+    width: 10%;
+    background: url(../images/search.png) no-repeat right center;
+    background-size: contain;
+    cursor: pointer;
+}
+/*头部结束*/
+/*主体开始*/
+/*轮播图开始*/
+.container .main .banner {
+    width: 100%;
+    padding: 0.5rem .5rem 0;
+}
+.container .main .banner .play {
+    overflow: hidden;
+}
+.container .main .banner ul:first-child {
+    width: 300%;
+}
+.container .main .banner .play ul li {
+    width: 33.333%;
+}
+.container .main .banner ul li img {
+    width: 100%;
+}
+.container .main .banner .play ul:last-child  {
+    width: 100%;
+    padding: .4rem 0;
+    text-align: center;
+}
+.container .main .banner .play ul:last-child li {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background: #BEE0A0;
+    border-radius: .5rem;
+    margin: 0 .4rem;
+    cursor: pointer;
+}
+.container .main .fl-nav {
+    width: 100%;
+}
+.container .main .fl-nav li {
+    width: 25%;
+    float: left;
+}
+.container .main .fl-nav li a {
+    width: 100%;
+    display: block;
+    margin: 2rem 0 1rem;
+}
+.container .main .fl-nav li a img {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto;
+}
+.container .main .fl-nav li a p {
+    text-align: center;
+    padding: 0.6rem 0;
+}
+/*轮播图开始*/
+/*热门商城开始*/
+.container .hot .shop li {
+    width: 25%;
+}
+/*热门商城结束*/
+
+/*主体结束*/

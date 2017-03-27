@@ -1,0 +1,10 @@
+/*头部开始*/
+.container .header .return-c {
+    width: calc(100% - 6.4rem);
+}
+/*头部结束*/
+/*热门商城开始*/
+.container .main .hot .shop li {
+    width: 33.33333%;
+}
+/*热门商城结束*/
